@@ -1,0 +1,8 @@
+name: EP-Recipe
+version: "1.0"
+description: "This plugin handles and operates custom crafting recipes for EPMC"
+authors: ["0xBit"]
+website: https://earthpol.github.com
+main: com.earthpol.recipes.Main
+api: ["1.16.4"]
+api-version: 1.16
