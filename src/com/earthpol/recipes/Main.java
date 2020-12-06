@@ -137,11 +137,18 @@ public class Main extends JavaPlugin {
         HeartOfSea.setIngredient('S', Material.SLIME_BALL);
         Bukkit.addRecipe(HeartOfSea);
         
+        //Custom Nether War
         final ShapedRecipe netherWart = new ShapedRecipe(new NamespacedKey(this, "custom_netherWart"), new ItemStack(Material.NETHER_WART, 8));
         netherWart.shape("RRR", "RBR", "RRR");
         netherWart.setIngredient('R', Material.REDSTONE_BLOCK);
         netherWart.setIngredient('B', Material.BLAZE_POWDER);
         Bukkit.addRecipe(netherWart);
+        
+        //Custom String
+        final ShapelessRecipe string = new ShapelessRecipe(new NamespacedKey(this, "custom_string"), new ItemStack(Material.STRING, 4));
+        string.addIngredient(1, Material.WHITE_WOOL);
+        Bukkit.addRecipe(string);
+        
         
         //Custom Blaze Rods
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.BLAZE_ROD, 1), Material.IRON_BARS));
