@@ -149,6 +149,23 @@ public class Main extends JavaPlugin {
         string.addIngredient(1, Material.WHITE_WOOL);
         Bukkit.addRecipe(string);
         
+        //Custom Soulsand
+        final ShapedRecipe soulsand = new ShapedRecipe(new NamespacedKey(this, "custom_soulsand"), new ItemStack(Material.SOUL_SAND, 12));
+        soulsand.shape("RBR","BPB","RBR");
+        soulsand.setIngredient('R', Material.ROTTEN_FLESH);
+        soulsand.setIngredient('B', Material.BONE);
+        soulsand.setIngredient('P', Material.BLAZE_POWDER);
+        Bukkit.addRecipe(soulsand);
+        
+        //Custom Black Dye
+        final ShapelessRecipe blackdye1 = new ShapelessRecipe(new NamespacedKey(this, "custom_blackdye_1"), new ItemStack(Material.BLACK_DYE, 1));
+        string.addIngredient(1, Material.COAL);
+        Bukkit.addRecipe(blackdye1);
+        
+        //Custom Black Dye #2
+        final ShapelessRecipe blackdye2 = new ShapelessRecipe(new NamespacedKey(this, "custom_blackdye_2"), new ItemStack(Material.BLACK_DYE, 1));
+        string.addIngredient(1, Material.CHARCOAL);
+        Bukkit.addRecipe(blackdye2);
         
         //Custom Blaze Rods
         this.getServer().addRecipe(new FurnaceRecipe(new ItemStack(Material.BLAZE_ROD, 1), Material.IRON_BARS));
