@@ -190,6 +190,7 @@ public class Main extends JavaPlugin {
         
         //Netherrack
         final ShapedRecipe netherrack = new ShapedRecipe(new NamespacedKey(this, "custom_netherrack"), new ItemStack(Material.NETHERRACK, 8));
+        netherrack.shape("SSS", "SDS", "SSS");
         netherrack.setIngredient('S', Material.STONE);
         netherrack.setIngredient('D', Material.RED_DYE);
         Bukkit.addRecipe(netherrack);
@@ -279,12 +280,12 @@ public class Main extends JavaPlugin {
         Bukkit.addRecipe(redCarpet);
         
         //White Carpet
-        final ShapelessRecipe whiteCarpet = new ShapelessRecipe(new NamespacedKey(this, "custom_red_carpet"), new ItemStack(Material.WHITE_CARPET, 3));
+        final ShapelessRecipe whiteCarpet = new ShapelessRecipe(new NamespacedKey(this, "custom_white_carpet"), new ItemStack(Material.WHITE_CARPET, 3));
         whiteCarpet.addIngredient(1, Material.WHITE_CARPET);
         Bukkit.addRecipe(whiteCarpet);
         
         //Yellow Carpet
-        final ShapelessRecipe yellowCarpet = new ShapelessRecipe(new NamespacedKey(this, "custom_red_carpet"), new ItemStack(Material.YELLOW_CARPET, 3));
+        final ShapelessRecipe yellowCarpet = new ShapelessRecipe(new NamespacedKey(this, "custom_yellow_carpet"), new ItemStack(Material.YELLOW_CARPET, 3));
         yellowCarpet.addIngredient(1, Material.YELLOW_CARPET);
         Bukkit.addRecipe(yellowCarpet);
         
