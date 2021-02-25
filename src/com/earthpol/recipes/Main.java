@@ -27,8 +27,8 @@ public class Main extends JavaPlugin {
 		log.info("= Loading Custom Recipes");
 		recipes();
 		log.info("= Loaded Custom Recipes");
-		log.info("= Registering Crafting Listener");
-		getServer().getPluginManager().registerEvents(new CraftingNerfs(), this);
+		//log.info("= Registering Crafting Listener");
+		//getServer().getPluginManager().registerEvents(new CraftingNerfs(), this);
 		log.info("=========================");
 	}
 	
